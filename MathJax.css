@@ -1,0 +1,72 @@
+body {
+  background: #A98;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+li {
+  list-style-position: inside;
+  text-indent: 1em;
+}
+
+.red {
+  color: #C00;
+}
+
+.green {
+  color: #080;
+}
+
+.blue {
+  color: #00C;
+}
+
+.magenta {
+  color: #808;
+}
+
+/*
+Common characters to use:
+
+∂∫∳Δ∇°√±∓∈⋃≡≈≠∝∞⨯⋅≤≥∴∵➝
+αβγδεφκλμθπρσωΣΩ
+
+
+Blank template tags (Do not edit; copy & paste):
+
+<ul class="example"><b>Example X: </b>
+				  <ol><em></em>
+				    
+				    <br><li></li>
+				  </ol>
+				</ul>
+
+<ul class="topic"><b></b>
+				  <li></li>
+				</ul>
+
+<!doctype html>
+<html>
+  <head>
+		  <meta charset="UTF-8">
+		  <link rel="stylesheet" href="../Differential_Equations.css">
+		  <title>Section </title>
+  </head>
+  <body>
+  		<h1>Section </h1>
+  		
+  		<ul class="topic"><b></b>
+  		  <li></li>
+  		</ul>
+  	
+  	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  	<script>MathJax = {tex: {inline: [['$', '$']]}};</script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  </body>
+</html>
+*/

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="MathJax.css">
+    <title>Trigonometry Basics</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>MathJax = {tex: {inlineMath: [['$', '$']]}};</script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  </head>
+  
+  <body>
+    <h1>Trigonometry Basics</h1>
+    
+    <ul><b>Angles</b>
+      <li>An <b>angle</b> is the space made between two planes or lines</li>
+      <li>The general symbol for an angle is $θ$</li>
+      <li>The units for an angle is either degrees ($°$) or radians (rad)</li>
+        <ul>> Note: When using radians as the unit, "rad" is usually omitted</ul>
+        <ul>> Most programming languages & intermediate/advanced math courses use radians as the default unit for calculations</ul>
+        <ul>> It just so happens that $π = 180°$ is true ($π$ here is in radians; the actual value for $π$ isn't actually too important, think of $π$ as though it's a variable that is assigned a certain value)</ul>
+      
+      <br><li>Different shapes have certain amount of angles that always add up to a specific angular sum depending on the number of sides</li>
+        <ul>> For instance, the sum of all three angles in a triangle always adds up to $θ = 180°$ or $θ = π$</ul>
+        <ul>> Another important example is a circle where the angular sum from the center of a circle always adds up to $θ = 360°$ or $θ = 2π$</ul>
+    </ul>
+    
+    <br><ul><b>Right Triangles</b>
+      <li>A <b>right triangle</b> is a triangle that contains one right angle, where $θ = 90°$ or $θ = \frac{π}{2}$</li>
+      <img src = "Right_Triangle.png">
+      
+      <br><br><li>There are three sides to a triangle relative to the angle $θ$: one opposite side, one adjacent side & one hypotenuse side</li>
+      
+      <br><li>The hypotenuse side of a right triangle is always larger than the other two sides</li>
+        <ul>> It just so happens that the sum of the two squares of the opposite & adjacent side lengths ($L_o$ & $L_a$ respectively) equals to the square of the hypotenuse length ($L_h$), in other words:
+          <li>$L_o^2 + L_a^2 = L_h^2$</li>
+          
+          <br><li>$a^2 + b^2 = c^2$</li>
+            
+            <br><ul>~ This is how it is most commonly written as; The Pythagoream Theorem</ul>
+            <ul>~ This is a very useful formula because it allows us to find the length of any side of a right triangle given the length of two sides</ul>
+            <ul>~ The length of the hypotenuse can be solved by rearranging the Pythagoream Theorem: 
+              <li>$c^2 = \sqrt{a^2 + b^2}$</li>
+            </ul>
+            
+            <br><ul>~ Or the length of any other side besides the hypotenuse can be solved by: 
+              <li>$a^2 = \sqrt{c^2 - b^2}$</li>
+            </ul>
+        </ul>
+      
+      <br><li>The length of any side of a right triangle can also be solved using the length of another side & one angle</li>
+        <ul>This is where trigonmetry comes in..</ul>
+    </ul>
+    
+    <br><ul><b>Trigonometry</b>
+      <li>Sine or cosine functions (<b>sinusoidal functions</b> or <b>trigonometric functions</b>) are used to solve for an angle or length of a right triangle</li>
+        <ul>> It's also worth noting that a circle forms four interior right triangles</ul>
+        <img src = "Quarter_Circle.jpeg">
+      
+      <br><br><li>The <b>sine</b> function takes an input of an angle and outputs the ratio of the opposite length & the hypotenuse length: </li>
+        <ul>> $sin(θ) = \frac{L_o}{L_h}$</ul>
+      
+      <br><li>The <b>cosine</b> function takes an input of an angle and outputs the ratio of the adjacent length & the hypotenuse length: </li>
+        <ul>> $cos(θ) = \frac{L_a}{L_h}$</ul>
+      
+      <br><li>The <b>tangent</b> function is the ratio of the sine function & cosine function: </li>
+        <ul>> $tan(θ) = \frac{sin(θ)}{cos(θ)}$</ul>
+        
+        <br><ul>> $tan(θ) = \frac{L_o}{L_a}$</ul>
+      
+      <br><li>The length of any one side and a given angle can therefore be used to solve for any other side by rearranging these trigonometric functions</li>
+      
+      <br><li>In the case where two sides of a right triangle are given and the angle is unknown, the angle can be solved by rearranging the trig functions in a different way</li>
+      <li>To "cancel out" a trig function, its inverse or arc would have to be used</li>
+      <li>For instance, to solve for an angle given the opposite length & hypotenuse length, the <b>inverse-sine</b> or <b>arc-sine</b> functions are used: </li>
+        <ul>> $θ = sin^-(\frac{L_o}{L_h})$</ul>
+        
+        <br><ul>> $θ = asin(\frac{L_o}{L_h})$</ul>
+      
+      <br><li>The inverse of any trig function can be used in this way to solve for an unknown angle</li>
+      
+      <br><li>Other less common trig functions include the secant (from sine), cosecant (from cosine), & cotangent (from tangent) functions</li>
+        <ul>These functions are simply the inverse of their respective lengths: 
+          <li>The <b>secant</b> function is the inverse of sine (not to be confused with sine-inverse): </li>
+            <ul>~ $sec(θ) = \frac{1}{sin(θ)}$</ul>
+            
+            <br><ul>~ $sec(θ) = \frac{L_h}{L_o}$</ul>
+          
+          <br><li>The <b>cosecant</b> function is the inverse of cosine: </li>
+            <ul>~ $csc(θ) = \frac{1}{cos(θ)}$</ul>
+            
+            <br><ul>~ $csc(θ) = \frac{L_h}{L_a}$</ul>
+          
+          <br><li>The <b>cotangent</b> function is the inverse of tangent: </li>
+            <ul>~ $cot(θ) = \frac{1}{tan(θ)}$</ul>
+            
+            <br><ul>~ $cot(θ) = \frac{cos(θ)}{sin(θ)}$</ul>
+            
+            <br><ul>~ $cot(θ) = \frac{L_a}{L_o}$</ul>
+        </ul>
+    </ul>
+    
+    <br><ul><b>Special Right Triangles</b>
+      <li>For simplicity, radians will be used instead of degrees</li>
+      
+      <br><li>There are certain lengths & angles of a right triangle that are always constant</li>
+      
+      <br><li>An important one is where the opposite & adjacent lengths are both equal to $1$</li>
+        <ul>> For this case, the hypotenuse is always equal to $\sqrt{2}$ & either angle is always equal to $\frac{π}{4}$ or $45°$: 
+          <li>if($L_o == 1$ && $L_a == 1$) {$L_h = \sqrt{2}$; $θ = \frac{π}{4}$}</li>
+        </ul>
+      
+      <img src = "Special_Right_Triangles.jpg">
+      
+      <br><br><li>Another important special right triangle is where the opposite length is equal to $1$ and the adjacent length is equal to $\sqrt{3}$</li>
+        <ul>> For this case, the hypotenuse is always equal to $2$ & the angle is always equal to $\frac{π}{6}$ or $30°$: 
+          <li>if($L_o == 1$ && $L_a == \sqrt{3}$) {$L_h = 2$; $θ = \frac{π}{6}$}</li>
+        </ul>
+        
+        <br><ul>> The opposite & adjacent lengths can also be reversed so that the relative angle is equal to $\frac{π}{3}$ or $60°$: 
+          <li>if($L_o == \sqrt{3}$ && $L_a == 1$) {$L_h = 2$; $θ = \frac{π}{3}$}</li>
+        </ul>
+      
+      <br><li>The lengths of these special right triangles can also be scaled to any value</li>
+        <ul>> However, the angles & the ratio beween the lengths will always remain the same</ul>
+      
+      <br><li>Try inputting any angle in radians (in terms of $π$) into a calculator and see the result!</li>
+      <li>This result is really just the ratio of lengths according to which trig function you use</li>
+      <li>Test out the angles from the special right triangles and see how the ratio of lengths match!</li>
+    </ul>
+    
+  </body>
+</html>
